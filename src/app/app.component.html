@@ -1,0 +1,24 @@
+<div class="navigation">
+  <div class="logo">
+    <img class="logo-img" src="assets/img/logo.png" />
+  </div>
+  <ul class="nav-list">
+    <li class="nav-item">home</li>
+    <li class="nav-item">pages</li>
+    <li class="nav-item">categories</li>
+    <li class="nav-item">travel</li>
+    <li class="nav-item">about</li>
+    <li class="nav-item">contact</li>
+  </ul>
+</div>
+<div class="owl-stage-outer">
+  <div class="owl-stage" *ngFor="let slide of slider">
+    <div class="owl-image">
+      <img class="img" src={{slide.img}}>
+    </div>
+    <h5 class="owl-day">{{slide.day}}</h5>
+    <h4 class="owl-title">{{slide.title}}</h4>
+  </div>
+</div>
+<router-outlet></router-outlet>
+

@@ -1,0 +1,72 @@
+$text-color: #191919;
+$text-hover-color: #e59f80;
+$slider-text-color: #fff;
+
+// functions
+
+
+@mixin text-in-slider ($font-size, $top) {
+  position: absolute;
+  font-size: $font-size;
+  width: 20%;
+  top: $top;
+  font-weight: 500;
+}
+
+
+.navigation {
+  width: 80%;
+  padding-left: 10%;
+  padding-right: 10%;
+  .logo {
+    margin: 10px 0px;
+    float: left;
+    .logo-img {
+
+    }
+  }
+  .nav-list {
+    float: right;
+    list-style-type: none;
+    .nav-item {
+      padding: 10px;
+      text-transform: uppercase;
+      font-size: 14px;
+      color: $text-color;
+      float: left;
+      letter-spacing: 1px;
+      cursor: pointer;
+      font-weight: 600;
+      &:hover {
+        color: $text-hover-color;
+      }
+    }
+  }
+}
+.owl-stage-outer {
+  clear: both;
+  display: flex;
+  flex-direction: row;
+  color: $slider-text-color;
+  position: relative;
+  text-align: center;
+  .owl-stage {
+    .owl-image{
+      max-width: 94%;
+      .img {
+        width: 100%;
+      }
+    }
+
+    .owl-day {
+      text-transform: uppercase;
+      @include text-in-slider(13px, 60%);
+      letter-spacing: 2px;
+    }
+    .owl-title {
+      @include text-in-slider(14px, 70%);
+      outline: 0 solid transparent;
+      font-family: "Poppins", sans-serif;
+    }
+  }
+}
