@@ -20,5 +20,29 @@
     <h4 class="owl-title">{{slide.title}}</h4>
   </div>
 </div>
+<div class="area">
+  <div class="post-area" *ngFor="let post of posts">
+    <div class="post-img">
+      <img class="post-image" src={{post.img}}>
+    </div>
+    <div class="post-areas">
+      <p class="post-day">{{post.day}}</p>
+      <p class="post-title">{{post.title}}</p>
+      <div class="post-meta">
+        <a><i>by </i>{{post.after}}</a>
+        <a><i> eye </i>{{post.views}}</a>
+        <a><i> comment </i>{{post.comments}}</a>
+      </div>
+      <p class="post-paragraph">{{post.paragraph}}</p>
+      <p class="post-continue">Continue Reading   </p>
+    </div>
+    <div class="post-line">
+      <img src="assets/img/breadcrumb-line.png">
+    </div>
+  </div>
+  <div class="sidebar-area">
+
+  </div>
+</div>
 <router-outlet></router-outlet>
 

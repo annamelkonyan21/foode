@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
 $text-color: #191919;
 $text-hover-color: #e59f80;
 $slider-text-color: #fff;
-
+$text-paragraph-color: #595959;
+$text-continue-color: #a6a6a6;
 // functions
 
 
@@ -53,20 +55,95 @@ $slider-text-color: #fff;
   .owl-stage {
     .owl-image{
       max-width: 94%;
+      opacity: .7 ;
       .img {
         width: 100%;
       }
     }
-
     .owl-day {
       text-transform: uppercase;
       @include text-in-slider(13px, 60%);
       letter-spacing: 2px;
     }
     .owl-title {
-      @include text-in-slider(14px, 70%);
+      @include text-in-slider(20px, 70%);
       outline: 0 solid transparent;
       font-family: "Poppins", sans-serif;
+      cursor: pointer;
+      &:hover {
+        color: $text-hover-color;
+      }
     }
+  }
+}
+.area {
+  width: 80%;
+  padding: 10%;
+  .post-area {
+    padding: 1%;
+    float: left;
+    .post-img {
+      float: left;
+      width: 40%;
+      .post-image {
+        float: left;
+        width: 90%;
+      }
+    }
+    .post-areas {
+      width: 35%;
+      float: left;
+      .post-day {
+        color: $text-hover-color;
+        text-transform: uppercase;
+        font-weight: 500;
+        margin-top: 0px;
+      }
+      .post-title {
+        font-weight: 500;
+        line-height: 1.5;
+        font-family: 'Merriweather', serif;
+        font-size: 24px;
+        letter-spacing: 1.1px;
+        cursor: pointer;
+        &:hover {
+          color: $text-hover-color;
+        }
+      }
+      .post-meta {
+        i {
+          color: darkgrey;
+          margin-left: 10px;
+        }
+      }
+      .post-paragraph {
+        width: 80%;
+        line-height: 25px;
+        font-size: 20px;
+        transition-duration: 500ms;
+        font-weight: 300;
+        color: $text-paragraph-color;
+      }
+      .post-continue {
+        text-transform: uppercase;
+        color: $text-continue-color;
+        font-size: 14px;
+        margin-bottom: 0px;
+        cursor: pointer;
+        &:hover {
+          color: $text-hover-color;
+        }
+      }
+    }
+    .post-line {
+      width: 80%;
+      img {
+        max-width: 100%;
+        margin-top: 25px;
+      }
+    }
+  }
+  .sidebar-area {
+
   }
 }

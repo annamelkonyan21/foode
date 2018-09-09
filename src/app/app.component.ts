@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { slider1 } from './helper/slider';
+import { slider1, POSTS } from './helper/slider';
 
 @Component({
   selector: 'app-root',
@@ -8,14 +8,14 @@ import { slider1 } from './helper/slider';
 })
 export class AppComponent {
   public slider = slider1;
+  public posts = POSTS;
   constructor( ) {
     this.sliderTime(this.slider);
   }
-  sliderTime(...array ) {
+  sliderTime(array ) {
      setInterval(() => {
-      //array =  array.push(array[0]);
-       //array.unshift();
-       console.log(array);
-     }, 8000);
+        array.push(array[0]);
+        array.shift();
+     }, 5000);
   }
 }
