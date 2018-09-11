@@ -4,7 +4,7 @@ interface FirstSlider {
     title: string;
 }
 
-export const slider1: FirstSlider[] = [
+export const SLIDER: FirstSlider[] = [
     {
         img: 'assets/img/6.jpg',
         day: 'MAY 8, 2018 / Foody',
@@ -40,7 +40,7 @@ interface Posts {
     views: number;
     comments: number;
     paragraph: string;
-};
+}
 
 export const POSTS: Posts[] = [
     {
@@ -97,4 +97,39 @@ export const POSTS: Posts[] = [
         comments: 25,
         paragraph: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit.'
     }
-];
+]
+
+interface LatestPost {
+  img: string;
+  title: string;
+  by: string;
+}
+
+export const LATEST_POST: LatestPost[]  = [
+  {
+    img: 'assets/img/lp1.jpg',
+    title: 'Weeknight Ponzu Pasta',
+    by: 'Erin Alderson'
+  },
+  {
+    img: 'assets/img/lp2.jpg',
+    title: 'The Most Popular Recipe Last Month',
+    by: 'Erin Alderson'
+  },
+  {
+    img: 'assets/img/lp3.jpg',
+    title: 'A Really Good Chana Masala',
+    by: 'Erin Alderson'
+  },
+  {
+    img: 'assets/img/lp4.jpg',
+    title: 'Spicy Instant Pot Taco Soup',
+    by: 'Erin Alderson'
+  },
+  {
+    img: 'assets/img/lp5.jpg',
+    title: 'Lime Leaf Miso Soup',
+    by: 'Erin Alderson'
+  },
+
+]

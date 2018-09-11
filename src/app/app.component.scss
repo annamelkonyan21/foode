@@ -4,8 +4,6 @@ $text-hover-color: #e59f80;
 $slider-text-color: #fff;
 $text-paragraph-color: #595959;
 $text-continue-color: #a6a6a6;
-// functions
-
 
 @mixin text-in-slider ($font-size, $top) {
   position: absolute;
@@ -15,6 +13,17 @@ $text-continue-color: #a6a6a6;
   font-weight: 500;
 }
 
+@mixin buttons () {
+  cursor: pointer;
+  &:hover {
+    color: $text-hover-color;
+  }
+}
+
+@mixin width_and_float($width, $float) {
+  width: $width;
+  float: $float;
+}
 
 .navigation {
   width: 80%;
@@ -23,9 +32,6 @@ $text-continue-color: #a6a6a6;
   .logo {
     margin: 10px 0px;
     float: left;
-    .logo-img {
-
-    }
   }
   .nav-list {
     float: right;
@@ -37,11 +43,9 @@ $text-continue-color: #a6a6a6;
       color: $text-color;
       float: left;
       letter-spacing: 1px;
-      cursor: pointer;
       font-weight: 600;
-      &:hover {
-        color: $text-hover-color;
-      }
+
+      @include buttons();
     }
   }
 }
@@ -69,81 +73,168 @@ $text-continue-color: #a6a6a6;
       @include text-in-slider(20px, 70%);
       outline: 0 solid transparent;
       font-family: "Poppins", sans-serif;
-      cursor: pointer;
-      &:hover {
-        color: $text-hover-color;
-      }
+      @include buttons();
     }
   }
 }
-.area {
-  width: 80%;
-  padding: 10%;
-  .post-area {
-    padding: 1%;
-    float: left;
-    .post-img {
+.area-and-sidebar {
+  .area {
+    padding: 5% 0px 0% 5%;
+    @include width_and_float(60%, left);
+    .post-area {
+      padding: 1%;
       float: left;
-      width: 40%;
-      .post-image {
-        float: left;
-        width: 90%;
+      .post-img {
+        @include width_and_float(40%, left);
+        .post-image {
+          @include width_and_float(100%, left);
+        }
       }
-    }
-    .post-areas {
-      width: 35%;
-      float: left;
-      .post-day {
-        color: $text-hover-color;
-        text-transform: uppercase;
-        font-weight: 500;
-        margin-top: 0px;
-      }
-      .post-title {
-        font-weight: 500;
-        line-height: 1.5;
-        font-family: 'Merriweather', serif;
-        font-size: 24px;
-        letter-spacing: 1.1px;
-        cursor: pointer;
-        &:hover {
+      .post-areas {
+        @include width_and_float(50%, left);
+        margin-left: 5%;
+        .post-day {
           color: $text-hover-color;
+          text-transform: uppercase;
+          font-weight: 500;
+          margin-top: 0px;
+        }
+        .post-title {
+          font-weight: 500;
+          line-height: 1.5;
+          font-family: 'Merriweather', serif;
+          font-size: 24px;
+          letter-spacing: 1.1px;
+          @include buttons();
+        }
+        .post-meta {
+          i {
+            color: darkgrey;
+            margin-left: 10px;
+          }
+        }
+        .post-paragraph {
+          width: 80%;
+          line-height: 25px;
+          font-size: 20px;
+          transition-duration: 500ms;
+          font-weight: 300;
+          color: $text-paragraph-color;
+        }
+        .post-continue {
+          text-transform: uppercase;
+          color: $text-continue-color;
+          font-size: 14px;
+          margin-bottom: 0px;
+          @include buttons();
         }
       }
-      .post-meta {
-        i {
-          color: darkgrey;
-          margin-left: 10px;
-        }
-      }
-      .post-paragraph {
+      .post-line {
         width: 80%;
-        line-height: 25px;
-        font-size: 20px;
-        transition-duration: 500ms;
-        font-weight: 300;
-        color: $text-paragraph-color;
-      }
-      .post-continue {
-        text-transform: uppercase;
-        color: $text-continue-color;
-        font-size: 14px;
-        margin-bottom: 0px;
-        cursor: pointer;
-        &:hover {
-          color: $text-hover-color;
+        img {
+          max-width: 100%;
+          margin-top: 25px;
         }
-      }
-    }
-    .post-line {
-      width: 80%;
-      img {
-        max-width: 100%;
-        margin-top: 25px;
       }
     }
   }
   .sidebar-area {
-
+    @include width_and_float(30%, left);
+    padding: 5% 0px 0px 0px;
+    .about-me {
+      .lines {
+        .line {
+          float: left;
+          &:nth-child {
+            clear: both;
+          }
+        }
+        .about {
+          margin: 0px 10px ;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          font-size: 14px;
+        }
+        .line2 {
+          @include width_and_float(20%, left);
+          height: 20px;
+        }
+      }
+      .subscribe {
+        margin-top: 40px;
+        margin-bottom: 40px;
+      }
+      .icons {
+        clear: both;
+        ul {
+          li {
+            cursor: pointer;
+            margin: 12% 0px;
+            list-style-type: none;
+            float: left;
+            padding: 10px;
+            color: $text-color;
+            &:hover {
+              color: $text-hover-color;
+            }
+            &:nth-child {
+              clear: both;
+            }
+          }
+        }
+      }
+      .post {
+        margin-top: 200px;
+        .latest-post{
+          margin-top: 20px;
+          .latest {
+            .latest-img {
+              @include width_and_float(40%, left);
+              margin: 10px 20px 10px 0px;
+              height: auto;
+            }
+          }
+          .latest2 {
+            @include width_and_float(50%, left);
+            .latest-title {
+              color: $text-paragraph-color;
+              font-weight: 100;
+              @include buttons();
+            }
+            .latest-by {
+              margin-bottom: 90px;
+              margin-top: 10px;
+              i {
+                color: $text-continue-color;
+              }
+            }
+          }
+        }
+      }
+    }
+    .me {
+      clear: both;
+      img {
+        width: 65%;
+        border-radius: 50%;
+        margin: 30px 12%;
+      }
+    }
+    .signature {
+      img {
+        width: 94%;
+        margin-left: 3%;
+      }
+    }
+    .about-me-p {
+      width: 80%;
+      margin: 10px 10%;
+      text-align: center;
+      font-size: 18px;
+      line-height: 1.5;
+      color: $text-paragraph-color;
+      font-weight: 500;
+    }
   }
+
 }

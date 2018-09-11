@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { slider1, POSTS } from './helper/slider';
+import { SLIDER, POSTS , LATEST_POST} from './helper/slider';
 
 @Component({
   selector: 'app-root',
@@ -7,8 +7,9 @@ import { slider1, POSTS } from './helper/slider';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  public slider = slider1;
+  public slider = SLIDER;
   public posts = POSTS;
+  public latestPost = LATEST_POST;
   constructor( ) {
     this.sliderTime(this.slider);
   }
