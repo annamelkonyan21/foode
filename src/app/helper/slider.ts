@@ -133,3 +133,5 @@ export const LATEST_POST: LatestPost[]  = [
   },
 
 ]
+
+export const POPULAR_TAGS: string[] = ['Creative', 'Unique', 'Template', 'Photography', 'travel', 'lifestyle', 'Wordpress Template', 'food', 'idea'];

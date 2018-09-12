@@ -41,6 +41,10 @@
         <img src="assets/img/breadcrumb-line.png">
       </div>
     </div>
+    <div class="prev-and-next">
+      <span class="never">never</span>
+      <span class="older">older</span>
+    </div>
   </div>
   <div class="sidebar-area">
     <div class="about-me">
@@ -88,10 +92,63 @@
           </div>
         </div>
       </div>
-
+      <div class="cooking-book">
+        <img class="cooking-book-img" src="assets/img/add.png">
+      </div>
+      <div class="lines subscribe">
+        <img class="line" src="assets/img/widget-curve.png">
+        <p class="line about">newsletter</p>
+        <img class="line" src="assets/img/widget-curve.png">
+      </div>
+      <p class="cooking-me-p">Subscribe our newsletter gor get notification about new updates, information discount, etc.</p>
+      <div class="send-email">
+        <input class="send-email-input" placeholder="Your email">
+        <span class="send-email-button"><i class="fa fa-location-arrow"></i></span>
+      </div>
+      <div class="lines subscribe">
+        <img class="line" src="assets/img/widget-curve.png">
+        <p class="line about">popular tags</p>
+        <img class="line" src="assets/img/widget-curve.png">
+      </div>
+      <div class="popular-tags">
+        <div class="tags" *ngFor="let tags of popularTags">{{tags}}</div>
+      </div>
     </div>
   </div>
 </div>
+<div class="instagram">
+  <h2 class="instagram-title">Follow Us On Instagram</h2>
+  <div class="instagram-subtitle">@foodeblog</div>
+  <div class="instagram-pictures-list">
+    <div class="instagaram-picture-item">
+      <img class="istagram-picture" src="assets/img/insta1.jpg">
+    </div>
+    <div class="instagaram-picture-item">
+      <img class="istagram-picture" src="assets/img/insta2.jpg">
+    </div>
+    <div class="instagaram-picture-item">
+      <img class="istagram-picture" src="assets/img/insta3.jpg">
+    </div>
+    <div class="instagaram-picture-item">
+      <img class="istagram-picture" src="assets/img/insta4.jpg">
+    </div>
+    <div class="instagaram-picture-item">
+      <img class="istagram-picture" src="assets/img/insta5.jpg">
+    </div>
+    <div class="instagaram-picture-item">
+      <img class="istagram-picture" src="assets/img/insta6.jpg">
+    </div>
+  </div>
+</div>
+<div class="media-list">
+  <div class="media-item">
+    <!--<i class="fa fa-facebook"></i><a href="https://web.facebook.com" target="_blank">Facebook</a>-->
 
+  </div>
+
+</div>
+<footer >
+  Copyright @{{thisYear | date:'yyyy'}} All rights reserved | This template is made with  by Anna Melkonyan
+</footer>
 <router-outlet></router-outlet>
 
