@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+$text-paragraph-color: #595959;
+$text-continue-color: #a6a6a6;
+
+.about-us{
+  .title {
+    padding-top: 60px;
+    text-align: center;
+    width: 100%;
+    font-size: 36px;
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    clear: both;
+    color: $text-paragraph-color;
+  }
+  .subtitle {
+    text-align: center;
+    font-size: 16px;
+    color: $text-continue-color;
+    margin: 3% 0px;
+    font-family: 'Poppins', sans-serif;
+  }
+  .me {
+    width: 70%;
+    margin-left: 15%;
+    height: auto;
+    margin-bottom: 1%;
+  }
+  .about-us-text {
+    width: 70%;
+    color: $text-continue-color;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 16px;
+    line-height: 2;
+    font-family: 'Poppins', sans-serif;
+  }
+  .diferente {
+    color: #e59f80;
+    padding-top: 10px;
+    font-size: 18px;
+    padding-bottom: 10px;
+  }
+  .about-us-img {
+    img {
+      @extend .me;
+    }
+  }
+  .about-us-signa {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+}

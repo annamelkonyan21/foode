@@ -1,0 +1,16 @@
+<div class="navigation">
+  <div class="logo">
+    <img class="logo-img" src="assets/img/logo.png" />
+  </div>
+  <ul class="nav-list">
+    <li class="nav-item" [class.nav]="nav === 'home'" routerLink="/" (click)="setNav('home')">home</li>
+    <li class="nav-item" [class.nav]="nav === 'pages'" routerLink="/pages" (click)="setNav('pages')">pages</li>
+    <li class="nav-item" [class.nav]="nav === 'categories'" routerLink="/categories" (click)="setNav('categories')">categories</li>
+    <li class="nav-item" [class.nav]="nav === 'travel'" routerLink="/travel" (click)="setNav('travel')">travel</li>
+    <li class="nav-item" [class.nav]="nav === 'about'" routerLink="/about-us" (click)="setNav('about')">about</li>
+    <li class="nav-item" [class.nav]="nav === 'contact'" routerLink="/contact" (click)="setNav('contact')">contact</li>
+  </ul>
+
+</div>
+<router-outlet></router-outlet>
+

@@ -9,6 +9,8 @@ $text-hover-color: #e59f80;
 }
 
 .navigation {
+  //position: fixed;
+  background: #ffffff;
   width: 80%;
   padding-left: 10%;
   padding-right: 10%;
@@ -30,4 +32,8 @@ $text-hover-color: #e59f80;
       @include buttons();
     }
   }
+}
+
+.nav {
+  color: $text-hover-color !important;
 }

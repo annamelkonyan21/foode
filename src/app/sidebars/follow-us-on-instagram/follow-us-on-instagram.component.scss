@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+$button-color: #191919;
+$text-hover-color: #e59f80;
+
+
+.instagram {
+  .instagram-title{
+    text-align: center;
+    font-size: 36px;
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    margin-top: 10px;
+  }
+  .instagram-subtitle {
+    text-align: center;
+    color: $text-hover-color;
+  }
+  .instagram-pictures-list {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 5%;
+    .instagaram-picture-item{
+      position: relative;
+      z-index: 2;
+      overflow: hidden;
+      float: left;
+      margin: 10px 10px 10px 0px;
+      &:hover {
+        .istagram-picture {
+          transform: scale(1.2) rotate(5deg);
+          opacity: .3;
+        }
+        .instagram-text {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+      .istagram-picture {
+        max-width: 100%;
+        transition-duration: 1000ms;
+        cursor: pointer;
+      }
+      .instagram-text {
+        transition-duration: 500ms;
+        text-align: center;
+        display: inline-block;
+        transform: translateY(-50%);
+        position: absolute;
+        z-index: 30;
+        width: 100%;
+        top: 50%;
+        left: 0;
+        font-size: 14px;
+        font-weight: 500;
+        color: $button-color;
+        text-transform: uppercase;
+        opacity: 0;
+        visibility: hidden;
+        i {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}
+.media-list {
+  margin-top: 100px;
+  margin-left: 2%;
+  width: 96%;
+  margin-bottom: 100px;
+  .media-item {
+    ul {
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      li {
+        font-size: 14px;
+        margin-right: 6%;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-family: 'Poppins', sans-serif;
+        cursor: pointer;
+        &:hover {
+          color: $text-hover-color;
+        }
+        i {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}
