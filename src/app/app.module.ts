@@ -12,6 +12,8 @@ import { CategoriesComponent } from './pages/categories/categories.component';
 import { TravelComponent } from './pages/travel/travel.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { PageComponent } from './pages/page/page.component';
+import { SoshialMediaComponent } from './sidebars/soshial-media/soshial-media.component';
+
 
 @NgModule({
   declarations: [
@@ -24,13 +26,16 @@ import { PageComponent } from './pages/page/page.component';
     CategoriesComponent,
     TravelComponent,
     ContactComponent,
-    PageComponent
+    PageComponent,
+    SoshialMediaComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
-  providers: [],
+  providers: [
+
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

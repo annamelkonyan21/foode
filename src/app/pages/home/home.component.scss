@@ -175,25 +175,6 @@ $button-color: #191919;
         margin-top: 40px;
         margin-bottom: 40px;
       }
-      .icons {
-        clear: both;
-        ul {
-          li {
-            cursor: pointer;
-            margin: 12% 0px;
-            list-style-type: none;
-            float: left;
-            padding: 10px;
-            color: $text-color;
-            &:hover {
-              color: $text-hover-color;
-            }
-            &:nth-child {
-              clear: both;
-            }
-          }
-        }
-      }
       .post {
         margin-top: 200px;
         .latest-post{

@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+$text-color: #191919;
+$border-color: #ebebeb;
+$input-placeholder-color: #bbbbbb;
+$button-border-hover-color: #000;
+$button-background-color: #fff;
+
+.contacts {
+  display: flex;
+  width: 90%;
+  box-shadow:  0 0 20px $input-placeholder-color;
+  margin: 10% 5%;
+  .get-in-touch {
+    margin-left: 5%;
+    .contact-form {
+      margin-bottom: 15%;
+      .contact-inputs {
+        .contact-input {
+          border: 1px solid $border-color;
+          width: 30%;
+          margin-right: 4%;
+          padding: 15px 30px;
+          color: $input-placeholder-color;
+          font-style: italic;
+        }
+        .contact-textarea {
+          margin-top: 2%;
+          width: 83%;
+          padding: 15px 15px 60px;
+          border: 1px solid $border-color;
+          color: $input-placeholder-color;
+          font-style: italic;
+        }
+      }
+      .send {
+        padding: 15px 0px;
+        width: 40%;
+        border: 1px solid $button-border-hover-color;
+        margin: 10px 4px;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 500;
+        border-radius: 5px;
+        cursor: pointer;
+        background: $button-background-color;
+        transition-duration: 500ms;
+        &:hover {
+          background: $button-border-hover-color;
+          color: $button-background-color;
+        }
+      }
+    }
+  }
+  .information {
+    margin-right:   5%;
+    .information-items {
+      .information-item {
+        margin: 10px 0px 20px;
+        font-size: 20px;
+        color: $text-color;
+        i {
+          margin-right: 5%;
+        }
+      }
+    }
+  }
+  .contact-item {
+    width: 50%;
+    .title {
+      margin-top: 15%;
+      margin-bottom: 10%;
+      text-transform: uppercase;
+      font-family: "Merriweather", serif;
+      color: $text-color;
+      font-weight: 100;
+      letter-spacing: 2px;
+    }
+  }
+}
+

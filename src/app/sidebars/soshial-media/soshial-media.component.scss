@@ -1,0 +1,22 @@
+$text-color: #191919;
+$text-hover-color: #e59f80;
+.icons {
+  clear: both;
+  ul {
+    li {
+      cursor: pointer;
+      margin: 12% 0px;
+      list-style-type: none;
+      float: left;
+      padding: 10px;
+      color: $text-color;
+      &:hover {
+        color: $text-hover-color;
+      }
+      &:nth-child {
+        clear: both;
+      }
+    }
+  }
+}
+
