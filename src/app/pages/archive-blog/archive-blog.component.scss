@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+$input-background-color: #f2f4f5;
+$text-paragraph-color: #595959;
+$text-hover-color: #e59f80;
+$border-color: #ebebeb;
+$span-color: #a6a6a6;
+$header-color: #191919;
+
+
+@mixin width_and_float($width, $float) {
+  width: $width;
+  float: $float;
+}
+
+.archive-blog {
+  width: 92%;
+  display: flex;
+  margin-left: 4%;
+  margin-right: 4%;
+  .col-1 {
+    width: 95%;
+    margin-bottom: 20px;
+    float: left;
+    margin-top: 30px;
+    .header {
+
+      .header-image {
+        max-width: 100%;
+        margin-top: 10%;
+      }
+      .title {
+        background-image: url('../../../assets/img/1.jpg');
+        background-size: cover;
+        height: 380px;
+        max-width: 100%;
+        .day {
+          position: absolute;
+          bottom: 20px;
+        }
+        .subtitle {
+          position: absolute;
+          bottom: 10px;
+        }
+      }
+    }
+  }
+  .col-2 {
+    float: left;
+    width: 35%;
+    margin-bottom: 20px;
+    margin-top: 8px;
+    .send-email {
+      margin-top: 10%;
+      margin-bottom: 10%;
+      .send-email-input {
+        width: 70%;
+        padding: 20px;
+        border: none;
+        background: $input-background-color;
+        color: $text-paragraph-color;
+        font-size: 14px;
+        &:focus {
+          border: none;
+        }
+      }
+      .send-email-button {
+        background: $text-hover-color;
+        color: $input-background-color;
+        padding: 20px ;
+        cursor: pointer;
+        &:hover {
+          background: $text-paragraph-color;
+        }
+      }
+    }
+    .lines {
+      .line {
+        float: left;
+        &:nth-child {
+          clear: both;
+        }
+      }
+      .about {
+        margin: 0px 5px ;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 14px;
+      }
+      .line2 {
+        @include width_and_float(20%, left);
+        height: 20px;
+      }
+      .posts {
+        @extend .about;
+
+      }
+      .line-post {
+        @extend .line;
+        width: 30%;
+        margin-bottom: 15%;
+      }
+    }
+    .me {
+      img {
+        border-radius: 50%;
+        width: 70%;
+        margin: 20px 15%;
+      }
+    }
+    .signature {
+      img {
+        width: 94%;
+        margin-left: 3%;
+      }
+    }
+    .about-me-p {
+      width: 100%;
+      text-align: center;
+      font-size: 17px;
+      line-height: 1.8;
+      color: $text-paragraph-color;
+      font-weight: 500;
+    }
+    .categories {
+      margin: 15% 0px;
+      img {
+        width: 33% !important;
+      }
+    }
+    .categories-list {
+
+      ul {
+        margin: 25% -1em 15%;
+        list-style-type: square;
+        li {
+          cursor: pointer;
+          padding: 13px 0px;
+          border-bottom: 1px dotted $border-color;
+          margin-right: 1em;
+          transition-duration: 500ms;
+          font-family: "Merriweather", serif;
+          font-size: 16px;
+          color: $header-color;
+          .categories-count {
+            float: right;
+            color: $span-color;
+          }
+          &:hover {
+            color: $text-hover-color;
+            border-bottom: 1px dotted $border-color;
+          }
+          &:last-child {
+            border-bottom: none;
+          }
+        }
+      }
+    }
+    .latest-posts {
+      width: 110%;
+    }
+    .cooking-book {
+      img {
+        cursor: pointer;
+        margin-top: 10%;
+        margin-bottom: 15%;
+        width: 96%;
+      }
+    }
+  }
+
+}

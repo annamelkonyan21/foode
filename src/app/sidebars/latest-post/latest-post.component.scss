@@ -1,0 +1,41 @@
+$text-paragraph-color: #595959;
+$text-continue-color: #a6a6a6;
+$text-hover-color: #e59f80;
+
+@mixin buttons () {
+  cursor: pointer;
+  &:hover {
+    color: $text-hover-color;
+  }
+}
+
+@mixin width_and_float($width, $float) {
+  width: $width;
+  float: $float;
+}
+
+.latest-post{
+  //margin-top: 20px;
+  .latest {
+    .latest-img {
+      @include width_and_float(30%, left);
+      margin: 10px 20px 10px 0px;
+      height: auto;
+    }
+  }
+  .latest2 {
+    @include width_and_float(50%, left);
+    .latest-title {
+      color: $text-paragraph-color;
+      font-weight: 100;
+      @include buttons();
+    }
+    .latest-by {
+      margin-bottom: 65px;
+      margin-top: 10px;
+      i {
+        color: $text-continue-color;
+      }
+    }
+  }
+}

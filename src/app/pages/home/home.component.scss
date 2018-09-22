@@ -62,92 +62,6 @@ $button-color: #191919;
   .area {
     padding: 5% 0px 0% 5%;
     @include width_and_float(60%, left);
-    .post-area {
-      padding: 1%;
-      float: left;
-      .post-img {
-        @include width_and_float(40%, left);
-        .post-image {
-          @include width_and_float(100%, left);
-        }
-      }
-      .post-areas {
-        @include width_and_float(50%, left);
-        margin-left: 5%;
-        .post-day {
-          color: $text-hover-color;
-          text-transform: uppercase;
-          font-weight: 500;
-          margin-top: 0px;
-        }
-        .post-title {
-          font-weight: 500;
-          line-height: 1.5;
-          font-family: 'Merriweather', serif;
-          font-size: 24px;
-          letter-spacing: 1.1px;
-          @include buttons();
-        }
-        .post-meta {
-          i {
-            color: darkgrey;
-            margin-left: 10px;
-          }
-        }
-        .post-paragraph {
-          width: 80%;
-          line-height: 25px;
-          font-size: 20px;
-          transition-duration: 500ms;
-          font-weight: 300;
-          color: $text-paragraph-color;
-        }
-        .post-continue {
-          text-transform: uppercase;
-          color: $text-continue-color;
-          font-size: 14px;
-          margin-bottom: 0px;
-          @include buttons();
-        }
-      }
-      .post-line {
-        width: 80%;
-        img {
-          max-width: 100%;
-          margin-top: 25px;
-        }
-      }
-    }
-    .prev-and-next {
-      width: 80%;
-      .never, .older {
-        padding: 10px 20px;
-        border: 1px solid $border-color;
-        margin: 10px 4px;
-        color: $text-continue-color;
-        text-transform: uppercase;
-        font-size: 13px;
-        font-weight: 500;
-        cursor: pointer;
-        &:hover {
-          color: $button-color;
-        }
-      }
-      .never {
-        float: left;
-        @include buttons();
-        float: left;
-        i {
-          margin-right: 5px;
-        }
-      }
-      .older {
-        float: right;
-        i {
-          margin-left: 5px;
-        }
-      }
-    }
   }
   .sidebar-area {
     @include width_and_float(30%, left);
@@ -170,6 +84,9 @@ $button-color: #191919;
           @include width_and_float(20%, left);
           height: 20px;
         }
+        .popular-line {
+          margin-bottom: 10%;
+        }
       }
       .subscribe {
         margin-top: 40px;
@@ -177,31 +94,6 @@ $button-color: #191919;
       }
       .post {
         margin-top: 200px;
-        .latest-post{
-          margin-top: 20px;
-          .latest {
-            .latest-img {
-              @include width_and_float(40%, left);
-              margin: 10px 20px 10px 0px;
-              height: auto;
-            }
-          }
-          .latest2 {
-            @include width_and_float(50%, left);
-            .latest-title {
-              color: $text-paragraph-color;
-              font-weight: 100;
-              @include buttons();
-            }
-            .latest-by {
-              margin-bottom: 90px;
-              margin-top: 10px;
-              i {
-                color: $text-continue-color;
-              }
-            }
-          }
-        }
       }
       .cooking-book {
         .cooking-book-img{
@@ -278,6 +170,10 @@ $button-color: #191919;
       color: $text-paragraph-color;
       font-weight: 500;
     }
+    .posts {
+      width: 130%;
+    }
   }
+
 }
 

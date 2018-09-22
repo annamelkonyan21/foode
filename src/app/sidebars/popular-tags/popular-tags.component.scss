@@ -1,0 +1,26 @@
+$text-hover-color: #e59f80;
+$border-color: #ebebeb;
+$button-color: #191919;
+
+@mixin buttons () {
+  cursor: pointer;
+  &:hover {
+    color: $text-hover-color;
+  }
+}
+
+.popular-tags {
+  margin-top: 15%;
+  margin-bottom: 15%;
+  .tags {
+    @include buttons();
+    float: left;
+    padding: 10px 15px;
+    border: 1px solid $border-color;
+    margin: 4px;
+    color: $button-color;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+  }
+}

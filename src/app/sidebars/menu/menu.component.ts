@@ -6,15 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu.component.scss']
 })
 export class MenuComponent implements OnInit {
-  public nav: string = 'home';
+  public nav:string = 'home';
   constructor() { }
 
   ngOnInit() {
   }
-
-  setNav(nav) {
+  setNav(nav: string) {
     this.nav = nav;
-    console.log(this.nav)
   }
-
 }

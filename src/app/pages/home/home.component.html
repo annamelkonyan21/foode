@@ -10,29 +10,7 @@
 </div>
 <div class="area-and-sidebar">
   <div class="area">
-    <div class="post-area" *ngFor="let post of posts">
-      <div class="post-img">
-        <img class="post-image" src={{post.img}}>
-      </div>
-      <div class="post-areas">
-        <p class="post-day">{{post.day}}</p>
-        <p class="post-title">{{post.title}}</p>
-        <div class="post-meta">
-          <a><i>by </i>{{post.after}}</a>
-          <a><i> eye </i>{{post.views}}</a>
-          <a><i> comment </i>{{post.comments}}</a>
-        </div>
-        <p class="post-paragraph">{{post.paragraph}}</p>
-        <p class="post-continue">Continue Reading   </p>
-      </div>
-      <div class="post-line">
-        <img src="assets/img/breadcrumb-line.png">
-      </div>
-    </div>
-    <div class="prev-and-next">
-      <span class="never"><i class="fa fa-long-arrow-left"></i>never</span>
-      <span class="older">older <i class="fa fa-long-arrow-right"></i></span>
-    </div>
+    <app-post-card [posts]="posts"></app-post-card>
   </div>
   <div class="sidebar-area">
     <div class="about-me">
@@ -60,15 +38,7 @@
         <img class="line" src="assets/img/widget-curve.png">
       </div>
       <div class="post">
-        <div class="latest-post" *ngFor="let latest of latestPost">
-          <div class="latest">
-            <img class="latest-img" src={{latest.img}}>
-          </div>
-          <div class="latest2">
-            <h3 class="latest-title">{{latest.title}}</h3>
-            <p class="latest-by"><i>by</i> {{latest.by}}</p>
-          </div>
-        </div>
+        <app-latest-post [latestPost]="latestPost"></app-latest-post>
       </div>
       <div class="cooking-book">
         <img class="cooking-book-img" src="assets/img/add.png">
@@ -84,13 +54,11 @@
         <span class="send-email-button"><i class="fa fa-location-arrow"></i></span>
       </div>
       <div class="lines subscribe">
-        <img class="line" src="assets/img/widget-curve.png">
-        <p class="line about">popular tags</p>
-        <img class="line" src="assets/img/widget-curve.png">
+        <img class="line popular-line" src="assets/img/widget-curve.png">
+        <p class="line about popular-line">popular tags</p>
+        <img class="line popular-line" src="assets/img/widget-curve.png">
       </div>
-      <div class="popular-tags">
-        <div class="tags" *ngFor="let tags of popularTags">{{tags}}</div>
-      </div>
+      <app-popular-tags [popularTags]="popularTags"></app-popular-tags>
     </div>
   </div>
 </div>

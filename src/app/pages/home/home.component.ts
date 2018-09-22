@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {LATEST_POST, POPULAR_TAGS, POSTS, SLIDER} from '../../helper/slider';
-
+import { POPULAR_TAGS, SLIDER } from '../../helper/slider';
+import { LATEST_POST, POSTS } from '../../helper/posts';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',

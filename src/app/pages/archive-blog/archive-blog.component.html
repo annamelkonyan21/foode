@@ -1,0 +1,66 @@
+<app-menu></app-menu>
+<div class="archive-blog">
+  <div class="col-1">
+    <app-post-card [posts]="posts"></app-post-card>
+  </div>
+  <div class="col-2">
+    <div class="send-email">
+      <input class="send-email-input" placeholder="Search...">
+      <span class="send-email-button"><i class="fa fa-location-arrow"></i></span>
+    </div>
+    <div class="lines">
+      <img class="line" src="assets/img/widget-curve.png">
+      <p class="line about">about me</p>
+      <img class="line" src="assets/img/widget-curve.png">
+    </div>
+    <div class="me">
+      <img src="assets/img/about-me.jpg">
+    </div>
+    <div class="signature">
+      <img src="assets/img/signature.png">
+    </div>
+    <p class="about-me-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+    <div class="lines categories">
+      <img class="line2" src="assets/img/widget-curve.png">
+      <p class="line about">categories</p>
+      <img class="line2" src="assets/img/widget-curve.png">
+    </div>
+    <div class="categories-list">
+      <ul>
+        <li class="categories-item" *ngFor="let category of categories">{{category.name}}
+          <span class="categories-count">({{category.count}})</span>
+        </li>
+      </ul>
+    </div>
+    <div class="lines">
+      <img class="line-post" src="assets/img/widget-curve.png">
+      <p class="line posts">latest posts</p>
+      <img class="line-post" src="assets/img/widget-curve.png">
+    </div>
+    <div class="latest-posts">
+      <app-latest-post [latestPost]="latestPost"></app-latest-post>
+    </div>
+    <div class="cooking-book">
+      <img src="assets/img/add.png">
+    </div>
+    <div class="lines">
+      <img class="line" src="assets/img/widget-curve.png">
+      <p class="line about"> archives</p>
+      <img class="line" src="assets/img/widget-curve.png">
+    </div>
+    <div class="categories-list">
+      <ul>
+        <li class="categories-item" *ngFor="let archive of archives">{{archive}}
+        </li>
+      </ul>
+    </div>
+    <div class="lines ">
+      <img class="line-post" src="assets/img/widget-curve.png">
+      <p class="line posts">popular tags</p>
+      <img class="line-post" src="assets/img/widget-curve.png">
+    </div>
+    <app-popular-tags [popularTags]="popularTags"></app-popular-tags>
+  </div>
+</div>
+<app-follow-us-on-instagram></app-follow-us-on-instagram>
+<app-footer></app-footer>

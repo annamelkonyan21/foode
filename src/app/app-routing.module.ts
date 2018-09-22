@@ -6,6 +6,7 @@ import {CategoriesComponent} from './pages/categories/categories.component';
 import {ContactComponent} from './pages/contact/contact.component';
 import {PageComponent} from './pages/page/page.component';
 import {TravelComponent} from './pages/travel/travel.component';
+import {ArchiveBlogComponent} from './pages/archive-blog/archive-blog.component';
 
 const routes: Routes = [
   {
@@ -31,6 +32,10 @@ const routes: Routes = [
   {
     path: 'travel',
     component: TravelComponent
+  },
+  {
+    path: 'archive-blog',
+    component: ArchiveBlogComponent
   }
 ];
 

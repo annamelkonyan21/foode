@@ -13,6 +13,10 @@ import { TravelComponent } from './pages/travel/travel.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { PageComponent } from './pages/page/page.component';
 import { SoshialMediaComponent } from './sidebars/soshial-media/soshial-media.component';
+import { ArchiveBlogComponent } from './pages/archive-blog/archive-blog.component';
+import { PostCardComponent } from './sidebars/post-card/post-card.component';
+import { LatestPostComponent } from './sidebars/latest-post/latest-post.component';
+import { PopularTagsComponent } from './sidebars/popular-tags/popular-tags.component';
 
 
 @NgModule({
@@ -27,7 +31,11 @@ import { SoshialMediaComponent } from './sidebars/soshial-media/soshial-media.co
     TravelComponent,
     ContactComponent,
     PageComponent,
-    SoshialMediaComponent
+    SoshialMediaComponent,
+    ArchiveBlogComponent,
+    PostCardComponent,
+    LatestPostComponent,
+    PopularTagsComponent
   ],
   imports: [
     BrowserModule,
