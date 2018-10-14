@@ -17,6 +17,8 @@ import { ArchiveBlogComponent } from './pages/archive-blog/archive-blog.componen
 import { PostCardComponent } from './sidebars/post-card/post-card.component';
 import { LatestPostComponent } from './sidebars/latest-post/latest-post.component';
 import { PopularTagsComponent } from './sidebars/popular-tags/popular-tags.component';
+import { SinglePostComponent } from './pages/single-post/single-post.component';
+import { AgmCoreModule } from '@agm/core';
 
 
 @NgModule({
@@ -35,11 +37,15 @@ import { PopularTagsComponent } from './sidebars/popular-tags/popular-tags.compo
     ArchiveBlogComponent,
     PostCardComponent,
     LatestPostComponent,
-    PopularTagsComponent
+    PopularTagsComponent,
+    SinglePostComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyAFgM81Qz-SwfTzUsr4F51AgDj0HdN88CQ'
+    })
   ],
   providers: [
 

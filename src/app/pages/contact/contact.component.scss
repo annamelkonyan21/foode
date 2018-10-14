@@ -5,11 +5,18 @@ $input-placeholder-color: #bbbbbb;
 $button-border-hover-color: #000;
 $button-background-color: #fff;
 
+agm-map {
+  height: 400px;
+  width: 100%;
+}
+
+
+
 .contacts {
   display: flex;
   width: 90%;
   box-shadow:  0 0 20px $input-placeholder-color;
-  margin: 10% 5%;
+  margin: 8% 5% 10%;
   .get-in-touch {
     margin-left: 5%;
     .contact-form {

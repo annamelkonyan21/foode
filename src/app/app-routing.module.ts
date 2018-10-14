@@ -7,6 +7,7 @@ import {ContactComponent} from './pages/contact/contact.component';
 import {PageComponent} from './pages/page/page.component';
 import {TravelComponent} from './pages/travel/travel.component';
 import {ArchiveBlogComponent} from './pages/archive-blog/archive-blog.component';
+import {SinglePostComponent} from "./pages/single-post/single-post.component";
 
 const routes: Routes = [
   {
@@ -36,6 +37,10 @@ const routes: Routes = [
   {
     path: 'archive-blog',
     component: ArchiveBlogComponent
+  },
+  {
+    path: 'single-post',
+    component: SinglePostComponent
   }
 ];
 

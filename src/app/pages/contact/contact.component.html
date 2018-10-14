@@ -1,4 +1,8 @@
 <app-menu></app-menu>
+
+<agm-map [latitude]="lat" [longitude]="lng" >
+  <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+</agm-map>
 <div class="contacts">
   <div class="get-in-touch contact-item">
     <h2 class="title"> get in touch</h2>
@@ -12,7 +16,6 @@
       </div>
       <button class="send">Send</button>
     </form>
-
   </div>
   <div class="information contact-item">
     <h2 class="title"> information</h2>

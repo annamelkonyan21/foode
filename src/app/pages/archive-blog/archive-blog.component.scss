@@ -18,7 +18,7 @@ $header-color: #191919;
   margin-left: 4%;
   margin-right: 4%;
   .col-1 {
-    width: 95%;
+    width: 200%;
     margin-bottom: 20px;
     float: left;
     margin-top: 30px;
@@ -45,10 +45,7 @@ $header-color: #191919;
     }
   }
   .col-2 {
-    float: left;
-    width: 35%;
-    margin-bottom: 20px;
-    margin-top: 8px;
+
     .send-email {
       margin-top: 10%;
       margin-bottom: 10%;

@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+$text-color: #191919;
+$text-paragraph-color: #595959;
+$font-merriweather: "Merriweather", serif;
+
+.header {
+  padding-top: 90px;
+  padding-bottom: 5px;
+  font-family: $font-merriweather;
+  h1 {
+    margin: 0px;
+    text-align: center;
+    font-weight: 300;
+    color: $text-color;
+  }
+  p {
+    color: $text-paragraph-color;
+    margin: 0;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 16px;
+  }
+}
+
+.template {
+  margin-left: 10%;
+  width: 80%;
+  margin-right: 10%;
+  font-family: $font-merriweather;
+  h1, h2, h3, h4, h5, h6  {
+    line-height: 1.3;
+    font-weight: 400;
+  }
+  p {
+    color: $text-paragraph-color;
+    line-height: 2;
+    font-size: 16px;
+  }
+}

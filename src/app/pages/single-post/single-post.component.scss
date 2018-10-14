@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+$text-hover-color: #e59f80;
+$header-color: #191919;
+$text-paragraph-color: #595959;
+$border-color: #ebebeb;
+$text-continue-color: #a6a6a6;
+$button-color: #191919;
+
+.single-post {
+  width: 92%;
+  display: flex;
+  margin-left: 4%;
+  margin-right: 4%;
+  padding-top: 5%;
+  flex-direction: row;
+  font-family: 'Poppins', sans-serif;
+  .col-1 {
+    width: 70%;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    .date {
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-size: 13px;
+      color: $text-hover-color;
+      font-weight: 500;
+    }
+    .header {
+      color: $header-color;
+      margin-top: 10px;
+      transition-duration: 500ms;
+      font-weight: 100;
+      line-height: 1.8;
+      margin-bottom: 15px;
+      font-size: 36px;
+      font-family: "Merriweather", serif;
+    }
+    .single-post-after {
+      span {
+        float: left;
+        margin-left: 10px;
+        color: #a6a6a6;
+      }
+      i {
+        float: left;
+        margin-left: 10px;
+      }
+    }
+    article {
+      clear: both;
+      margin-left: 1.5%;
+      padding-top: 10px;
+      color: $text-paragraph-color;
+      p {
+        line-height: 2;
+        font-size: 16px;
+      }
+      .comments {
+        font-family: "Merriweather", sans-serif;
+        line-height: 2;
+        margin: 20px 0px;
+        img {
+          margin-right: 10px;
+        }
+      }
+      .subtitle {
+        font-family: "Merriweather", sans-serif;
+        font-size: 24px;
+        font-weight: 200;
+        color: $header-color;
+      }
+    }
+    .footer {
+      margin-top: 10%;
+      .creative-unique {
+        width: 50%;
+        float: left;
+        .creative, .unique {
+          padding: 8px 15px;
+          border: 1px solid $border-color;
+          margin: 10px 4px;
+          color: $text-paragraph-color;
+          text-transform: uppercase;
+          font-size: 13px;
+          font-weight: 600;
+          cursor: pointer;
+          float: left ;
+          &:hover {
+            color: $text-hover-color;
+          }
+        }
+      }
+      .share {
+        float: right;
+        span {
+          margin-top: 22px;
+          font-family: "Merriweather", serif;
+          font-size: 16px;
+          float: left;
+        }
+        .social-media {
+          margin-top: 10px;
+          float: left;
+          list-style-type: none;
+          li {
+            margin: 10px;
+            float: left;
+          }
+        }
+      }
+    }
+    .relatest-news {
+      padding: 15% 10px 10%;
+      .header {
+        font-size: 20px;
+      }
+    }
+  }
+  .col-2 {
+    width: 35%;
+    margin-bottom: 20px;
+    margin-top: 8px;
+  }
+}
